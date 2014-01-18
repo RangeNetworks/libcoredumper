@@ -1,0 +1,32 @@
+--- src/elfcore.c	2014-01-18 00:06:12.515005220 -0800
++++ src/elfcore.c	2014-01-18 00:06:43.651893716 -0800
+@@ -52,6 +52,7 @@
+ #include <sys/time.h>
+ #include <sys/uio.h>
+ #include <sys/wait.h>
++#include <linux/sched.h>
+ 
+ #include "google/coredumper.h"
+ #include "linux_syscall_support.h"
+--- src/linuxthreads.c	2014-01-18 00:05:27.917732629 -0800
++++ src/linuxthreads.c	2014-01-18 00:07:59.802066678 -0800
+@@ -49,7 +49,7 @@
+ #include <asm/fcntl.h>
+ #include <asm/posix_types.h>
+ #include <asm/types.h>
+-#include <linux/dirent.h>
++#include <linux/sched.h>
+ 
+ #include "linux_syscall_support.h"
+ #include "thread_lister.h"
+--- src/linux_syscall_support_unittest.cc	2014-01-18 00:05:09.437205286 -0800
++++ src/linux_syscall_support_unittest.cc	2014-01-18 00:07:11.832697862 -0800
+@@ -62,7 +62,7 @@
+ #include <asm/posix_types.h>
+ #include <asm/types.h>
+ #include <errno.h>
+-#include <linux/dirent.h>
++#include <dirent.h>
+ #include <linux/types.h>
+ #include <linux/unistd.h>
+ #include <signal.h>
