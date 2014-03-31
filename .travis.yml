@@ -1,0 +1,21 @@
+language: cpp
+compiler: gcc
+
+notifications:
+  irc:
+    channels:
+      - "chat.freenode.net#openbts"
+    template:
+      - "%{repository} : %{message} : %{build_url}"
+    on_success: change
+    on_failure: always
+
+#before_install:
+# - sudo apt-get install -qq cdbs libsqlite-dev unixodbc-dev
+
+#install:
+#  - sh bootstrap.sh
+
+script:
+  - ./build.sh
+
