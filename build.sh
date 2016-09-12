@@ -25,7 +25,7 @@ installIfMissing () {
 
 if [ ! -f coredumper-$VERSION.tar.gz ]
 then
-	sayAndDo wget http://google-coredumper.googlecode.com/files/coredumper-$VERSION.tar.gz
+	sayAndDo wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/google-coredumper/coredumper-$VERSION.tar.gz
 fi
 
 if [ -d coredumper-$VERSION ]
