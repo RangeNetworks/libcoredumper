@@ -35,7 +35,7 @@ fi
 
 sayAndDo tar zxf coredumper-$VERSION.tar.gz
 sayAndDo cd coredumper-$VERSION
-sayAndDo mv packages/deb debian
+sayAndDo cp -R packages/deb debian
 sayAndDo chmod 644 debian/control
 sayAndDo patch -p0 < ../fix_from_scratch_build.patch
 sayAndDo dpkg-buildpackage -us -uc
