@@ -1,6 +1,10 @@
 --- src/elfcore.c	2014-01-18 00:06:12.515005220 -0800
-+++ src/elfcore.c	2014-01-18 00:06:43.651893716 -0800
-@@ -52,6 +52,7 @@
++++ src/elfcore.c	2023-01-04 18:17:57.390000701 +0100
+@@ -48,10 +48,10 @@
+ #include <sys/poll.h>
+ #include <sys/prctl.h>
+ #include <sys/socket.h>
+-#include <sys/sysctl.h>
  #include <sys/time.h>
  #include <sys/uio.h>
  #include <sys/wait.h>
